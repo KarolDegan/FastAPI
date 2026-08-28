@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: fastapi-app
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
