@@ -1,0 +1,27 @@
+GET http://localhost:8000/clientes
+
+###
+
+POST http://localhost:8000/clientes
+Content-Type: application/json
+
+{
+  "nome": "João Silva",
+  "email": "joao.silva@example.com",
+  "telefone": "(11) 1111-1111"
+}
+
+###
+
+GET http://localhost:8000/clientes/1
+
+###
+
+PUT http://localhost:8000/clientes/1
+Content-Type: application/json
+
+{
+  "nome": "João Pereira",
+  "email": "joao.silva@example.com",
+  "telefone": "(11) 1111-1111"
+}
